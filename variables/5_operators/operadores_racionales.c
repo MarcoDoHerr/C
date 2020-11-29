@@ -2,7 +2,7 @@
 #include <stdlib.h> // Archivo de cabecera para subrutinas de utilidades
 int main()
 { // Inicio
- system("clear"); // Limpia pantalla
+ system("cls"); // Limpia pantalla
  printf("2 == 2 devuelve %d que implica verdadero\n",2==2);
  printf("'A' == 'a' devuelve %d que implica falso\n",'A'=='a');
  printf("2 != 2 devuelve %d que implica falso\n",2!=2);
