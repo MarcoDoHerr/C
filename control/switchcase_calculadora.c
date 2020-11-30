@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include <windows.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -8,6 +8,9 @@ int main()
 	int opcion;
 	float n1, n2, resultado;
 	
+	do {
+		
+	printf("--------------------------\n");
 	printf("Elige una opcion:\n");
 	printf("\t 1.- Suma\n");
 	printf("\t 2.- Resta\n");
@@ -16,8 +19,10 @@ int main()
 	printf("\t 5.- Potencia\n");
 	printf("\t 6.- Raiz cuadrada\n");
 	printf("\t 7.- Salir\n");
+	printf("--------------------------\n");
 	scanf("%d",&opcion);
 	system("cls");
+
 	
 	if(opcion==6){
 		printf("\nDame el primer valor: ");
@@ -70,8 +75,15 @@ int main()
 			printf("%f", resultado);
 		}
 		break;
-	default:
-		printf("Salir");
-		exit(0);
-	}	//Sale break
+	case 7:
+	printf("Vuelva Pronto\n");
+	break; 
+		default:
+		printf("Opcion Invalida\n");
+	
+	}
+	printf("Switch Finalizado\n");
+	}
+		while (opcion !=7);
+	printf("Do- While Finalizado\n");	//Sale break
 } 
